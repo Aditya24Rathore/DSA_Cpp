@@ -62,17 +62,6 @@ I solve problems step-by-step, focus on strong fundamentals, and push **clean, w
 
 ---
 
-## 📂 Repository Structure
-Basics/
-Recursion/
-Sorting/
-├── selection_sort.cpp
-├── bubble_sort.cpp
-├── insertion_sort.cpp
-└── merge_sort.cpp
-
----
-
 ## 🧠 Learning Approach
 - Follow **Striver A2Z** step-by-step
 - Understand intuition before coding
