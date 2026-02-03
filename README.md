@@ -1,72 +1,103 @@
-# 📚 Data Structures & Algorithms (DSA)
+# 📚 Data Structures & Algorithms (DSA) — Striver A2Z Sheet
 
-This repository contains my **Data Structures and Algorithms (DSA)** practice code written in **C++**.  
-I am consistently learning, coding, and pushing solutions to improve my **problem-solving skills** and prepare for **coding interviews**.
+<p align="left">
+  <a href="https://leetcode.com/u/Aditya_0324/">
+    <img src="https://img.shields.io/badge/LeetCode-black?logo=leetcode&logoColor=FFA116&style=flat-square"
+         style="border:1px solid white; border-radius:4px;" />
+  </a>
+  <a href="https://www.linkedin.com/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=flat-square"
+         style="border:1px solid white; border-radius:4px;" />
+  </a>
+  <a href="https://github.com/Aditya24Rathore">
+    <img src="https://img.shields.io/badge/GitHub-black?logo=github&logoColor=white&style=flat-square"
+         style="border:1px solid white; border-radius:4px;" />
+  </a>
+</p>
+
+This repository documents my **Data Structures & Algorithms (DSA) learning journey in C++**, following  
+**Striver’s A2Z DSA Sheet**.
+
+I solve problems step-by-step, focus on strong fundamentals, and push **clean, well-commented solutions** to GitHub while preparing for **coding interviews & placements**.
+
+🚀 **Current Progress:** Completed up to **Merge Sort**
 
 ---
 
-## 🚀 Goals
-- Build strong fundamentals in DSA
-- Practice problems from **LeetCode / GFG**
-- Improve time & space complexity understanding
-- Prepare for **placements & interviews**
+## 🧭 Learning Source
+- **Striver’s A2Z DSA Sheet**
+- Platforms: **LeetCode / GFG**
+- Language: **C++**
 
 ---
 
-## 🛠️ Languages & Tools
+## 📈 LeetCode Stats
+[![](https://leetcard.jacoblin.cool/Aditya_0324?theme=dark&font=Karma&ext=contest)](https://leetcode.com/u/Aditya_0324/)
+
+---
+
+## ✅ Progress Tracker (A2Z Sheet)
+
+### 🟢 Step 1: Learn the Basics
+- Input / Output
+- Time & Space Complexity
+- Basic Math
+- Patterns
+- Recursion
+
+### 🟢 Step 2: Sorting
+- Selection Sort
+- Bubble Sort
+- Insertion Sort
+- **Merge Sort** ✅
+
+⏳ _Currently learning_
+
+---
+
+## 🛠️ Tech Stack
 - **C++**
-- STL (Vector, Map, Set, Stack, Queue, etc.)
+- STL (vector, map, set, algorithm, etc.)
 - Git & GitHub
 
 ---
 
-## 📂 Topics Covered
-- Arrays
-- Strings
-- Recursion
-- Sorting Algorithms  
-  - Selection Sort  
-  - Bubble Sort  
-  - Insertion Sort  
-- Searching
-- Bit Manipulation
-- Mathematics
-- Basic Dynamic Programming
-- Two Pointer Technique
-- Hashing
-
-_(More topics will be added as I progress)_
+## 📂 Repository Structure
+Basics/
+Recursion/
+Sorting/
+├── selection_sort.cpp
+├── bubble_sort.cpp
+├── insertion_sort.cpp
+└── merge_sort.cpp
 
 ---
 
 ## 🧠 Learning Approach
-- Start with **brute force**
-- Optimize step-by-step
-- Focus on:
-  - Correctness
-  - Time Complexity
-  - Space Complexity
-- Write clean & readable code
+- Follow **Striver A2Z** step-by-step
+- Understand intuition before coding
+- Start with brute force → optimize
+- Analyze time & space complexity
+- Write readable and maintainable code
 
 ---
 
-## 📈 Progress Tracking
-- Daily/regular commits
-- Problems categorized by topic
-- Solutions include comments for clarity
+## 🔗 Connect With Me
+- **LeetCode:** https://leetcode.com/u/Aditya_0324/
+- **LinkedIn:** https://www.linkedin.com/
+- **GitHub:** https://github.com/Aditya24Rathore
 
 ---
 
-## 🔗 Profiles
-- **LeetCode:** [Aditya_0324](https://leetcode.com/u/Aditya_0324/)
-- **GitHub:** [Aditya24Rathore](https://github.com/Aditya24Rathore)
+## 🎯 Goals
+- Complete **Striver’s A2Z DSA Sheet**
+- Strengthen DSA fundamentals
+- Improve problem-solving skills
+- Prepare for **placements & technical interviews**
+- Stay consistent with regular commits
 
 ---
 
-## 🤝 Contributions
-This is a personal learning repository, but suggestions and improvements are always welcome!
-
----
-
-## ⭐ If you find this useful
-Give this repository a ⭐ to support my learning journey 😊
+## ⭐ Support
+If you find this repository helpful or relatable,  
+consider giving it a ⭐ — it motivates me to stay consistent 😊
