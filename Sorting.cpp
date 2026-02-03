@@ -96,21 +96,18 @@ int main() {
         cin >> arr[i];
     }
 
-    // Selects the minimum element in each pass and places it at the correct position
-    // Time Complexity {Worst & Avg & Best Case: O(n^2)}
-    // Space Complexity: O(1)  (in-place sorting)
+    // Picks the minimum element each pass and places it correctly
+    // Time: O(n^2) | Space: O(1)
     Selection_Sort(arr, arrsize);
 
 
-    // Pushes the maximum element to the end using adjacent swaps
-    // Time Complexity {Worst & Avg Case: O(n^2) || Best Case: O(n)}
-    // Space Complexity: O(1)  (in-place sorting)
+    // Repeatedly swaps adjacent elements to push max to the end
+    // Time: O(n^2) avg/worst, O(n) best | Space: O(1)
     bubble_sort(arr, arrsize);
 
 
-    // Takes an element and places it in its correct position in the sorted part
-    // Time Complexity {Worst & Avg Case: O(n^2) || Best Case: O(n)}
-    // Space Complexity: O(1)  (in-place sorting)
+    // Inserts each element into its correct position in the sorted part
+    // Time: O(n^2) avg/worst, O(n) best | Space: O(1)
     insertion_sort(arr, arrsize);
 
     vector<int> array(arrsize);
@@ -120,9 +117,8 @@ int main() {
         cin >> array[i];
     }
     
-    // Divides the array into single elements and merges them in sorted order
-    // Time Complexity: O(n log n) in Worst, Average, and Best cases
-    // Space Complexity: O(n)  (extra array used during merging)
+    // Divides array and merges subarrays in sorted order
+    // Time: O(n log n) | Space: O(n)
     mergeSort(array, 0, arrsize-1);
 
     for(int i = 0; i < arrsize; i++) {
