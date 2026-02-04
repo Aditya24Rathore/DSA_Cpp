@@ -49,10 +49,10 @@ I solve problems step-by-step, focus on strong fundamentals, and push **clean, w
 - Selection Sort
 - Bubble Sort
 - Insertion Sort
-- **Merge Sort** ✅
+- Merge Sort 
 
-⏳ _Currently learning_
-
+### 🟢 Step 3: Array
+- Loading..⌛
 ---
 
 ## 🛠️ Tech Stack
