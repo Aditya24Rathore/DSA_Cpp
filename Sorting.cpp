@@ -83,6 +83,32 @@ void mergeSort(vector<int> &array, int low, int high) {
     merge(array, low, mid, high);
 }
 
+int partition(vector<int> &array, int low, int high) {
+    int pivot = array[low];
+    int i = low;
+    int j = high;
+    while(i < j) {
+        while(array[i] <= pivot && i <= high - 1) {
+            i++;
+        }
+
+        while(array[j] > pivot && j >= low + 1) {
+            j--;
+        }
+        if(i < j) swap(array[i], array[j]);
+    }
+    swap(array[low], array[j]);
+    return j;
+}
+
+void quickSort(vector<int> &array, int low, int high) {
+    if(low < high) {
+        int pIndex = partition(array, low, high);
+        quickSort(array, low, pIndex - 1);
+        quickSort(array, pIndex + 1, high);
+    }
+}
+
 int main() {
 
     int arrsize;
@@ -121,8 +147,12 @@ int main() {
     // Time: O(n log n) | Space: O(n)
     mergeSort(array, 0, arrsize-1);
 
+    // Places pivot at correct position and partitions the array around it
+    // Time: O(n log n) avg/best, O(n^2) worst | Space: O(log n) avg
+    quickSort(array, 0, arrsize-1);
+
     for(int i = 0; i < arrsize; i++) {
-        cout << arr[i] << " ";
+        cout << array[i] << " ";
     }
 
     return 0;
