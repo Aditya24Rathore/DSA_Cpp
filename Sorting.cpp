@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void Selection_Sort(vector<int> array, int arrsize) {
+void Selection_Sort(vector<int> &array, int arrsize) {
     for(int i = 0; i <= arrsize-2; i++) {
         int min = i;
         for(int j = i; j <= arrsize-1; j++) {
@@ -15,7 +15,7 @@ void Selection_Sort(vector<int> array, int arrsize) {
     }
 }
 
-void bubble_sort(vector<int> array, int arrsize) {
+void bubble_sort(vector<int> &array, int arrsize) {
     for(int i = arrsize-1; i >= 1; i--) {
         int didSwap = 0;
         for(int j = 0; j <= i-1; j++) {
@@ -32,7 +32,7 @@ void bubble_sort(vector<int> array, int arrsize) {
     }
 }
 
-void insertion_sort(vector<int> array, int arrsize) {
+void insertion_sort(vector<int> &array, int arrsize) {
     for(int i = 0; i <=arrsize-1; i++) {
         int j = i;
         while(j > 0 && array[j-1] > array[j]) {
