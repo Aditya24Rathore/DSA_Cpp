@@ -1,28 +1,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void Selection_Sort(int arr[], int arrsize) {
+void Selection_Sort(vector<int> array, int arrsize) {
     for(int i = 0; i <= arrsize-2; i++) {
         int min = i;
         for(int j = i; j <= arrsize-1; j++) {
-            if(arr[j] < arr[min]) {
+            if(array[j] < array[min]) {
                 min = j;
             }
         }
-        int temp = arr[min];
-        arr[min] = arr[i];
-        arr[i] = temp;
+        int temp = array[min];
+        array[min] = array[i];
+        array[i] = temp;
     }
 }
 
-void bubble_sort(int arr[], int arrsize) {
+void bubble_sort(vector<int> array, int arrsize) {
     for(int i = arrsize-1; i >= 1; i--) {
         int didSwap = 0;
         for(int j = 0; j <= i-1; j++) {
-            if(arr[j] > arr[j+1]) {
-                int temp = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j] = temp;
+            if(array[j] > array[j+1]) {
+                int temp = array[j+1];
+                array[j+1] = array[j];
+                array[j] = temp;
                 didSwap = 1;
             }
         }
@@ -32,13 +32,13 @@ void bubble_sort(int arr[], int arrsize) {
     }
 }
 
-void insertion_sort(int arr[], int arrsize) {
+void insertion_sort(vector<int> array, int arrsize) {
     for(int i = 0; i <=arrsize-1; i++) {
         int j = i;
-        while(j > 0 && arr[j-1] > arr[j]) {
-            int temp = arr[j-1];
-            arr[j-1] = arr[j];
-            arr[j] = temp;
+        while(j > 0 && array[j-1] > array[j]) {
+            int temp = array[j-1];
+            array[j-1] = array[j];
+            array[j] = temp;
             j--;
         }
     }
@@ -110,38 +110,33 @@ void quickSort(vector<int> &array, int low, int high) {
 }
 
 int main() {
-
+    
     int arrsize;
     cout << "Enter Size of Array: ";
     cin >> arrsize;
-
-    int arr[arrsize];
-    cout << "Enter the Value of Array: ";
     
-    for(int i = 0; i < arrsize; i++) {
-        cin >> arr[i];
-    }
-
-    // Picks the minimum element each pass and places it correctly
-    // Time: O(n^2) | Space: O(1)
-    Selection_Sort(arr, arrsize);
-
-
-    // Repeatedly swaps adjacent elements to push max to the end
-    // Time: O(n^2) avg/worst, O(n) best | Space: O(1)
-    bubble_sort(arr, arrsize);
-
-
-    // Inserts each element into its correct position in the sorted part
-    // Time: O(n^2) avg/worst, O(n) best | Space: O(1)
-    insertion_sort(arr, arrsize);
-
+    
     vector<int> array(arrsize);
     cout << "Enter the Value of Array: ";
     
     for(int i = 0; i < arrsize; i++) {
         cin >> array[i];
     }
+    
+    // Picks the minimum element each pass and places it correctly
+    // Time: O(n^2) | Space: O(1)
+    Selection_Sort(array, arrsize);
+
+
+    // Repeatedly swaps adjacent elements to push max to the end
+    // Time: O(n^2) avg/worst, O(n) best | Space: O(1)
+    bubble_sort(array, arrsize);
+
+
+    // Inserts each element into its correct position in the sorted part
+    // Time: O(n^2) avg/worst, O(n) best | Space: O(1)
+    insertion_sort(array, arrsize);
+
     
     // Divides array and merges subarrays in sorted order
     // Time: O(n log n) | Space: O(n)
