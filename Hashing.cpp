@@ -112,7 +112,7 @@ void charHashingMap() {
 
 
 // Hashing Method
-// 1) Division Method  -> use linear chaning
+// 1) Division Method -> use linear chaning
 // 2) Folding Method
 // 3) mid Square Method
 
