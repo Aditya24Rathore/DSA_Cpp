@@ -12,7 +12,7 @@ void numberHashing() {
         cin >> arr[i];
     }
 
-    // precompute
+    // Precompute
     /*
     Note:
     - Arrays inside main/function → stack → safe till about 10^6
@@ -43,7 +43,7 @@ void characterHashing() {
     cout << "Enter String: ";
     cin >> str;
 
-    // precomputing
+    // Precomputing
     int hash[26] = {0};  // Alternative: use size 256 for all ASCII characters
     for(int i = 0; i < str.size(); i++) {
         hash[str[i] - 'a']++; // If using size 256, don't subtract 'a'
